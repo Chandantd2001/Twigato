@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +7,10 @@
         body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('images/food.webp'); /* Path to your high-res image */
+    background-image: url('images/food3.jpg'); /* Updated path to the new background image */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Keeps the image centered */
-    background-attachment: fixed; /* Optional: Keeps the background fixed during scrolling */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
     color: #FFFFFF; /* Make text white */
 }
 
@@ -20,7 +19,7 @@
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
     padding: 20px 30px;
-    background-color: rgba(255, 152, 0, 1); /* Increased opacity to 1 (fully opaque) */
+    background-color: rgba(255, 152, 0, 0.5); /* Increased opacity to 1 (fully opaque) */
     border-bottom: 3px solid #FF9800;
 }
 
