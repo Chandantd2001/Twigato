@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('images/food.webp'); /* Add your background image path here */
+            background-image: url('images/food3.jpg'); /* Add your background image path here */
             background-size: cover; /* Ensure the image covers the entire body */
             background-position: center; /* Center the background image */
             background-attachment: fixed; /* Keeps the background image fixed during scrolling */
@@ -34,6 +32,13 @@
             font-size: 3rem; /* Adjusted size */
             margin-bottom: 20px;
         }
+        h1 a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* White color */
+        }
+        h1 a:hover {
+            text-decoration: none; /* Ensure no underline on hover */
+        }
         h2 {
             text-align: center;
             color: #5D4037; /* Brown color for the "Login" text */
@@ -45,7 +50,7 @@
             color: #5D4037; /* Rich Brown */
         }
         input {
-            width: calc(100% - 20px); /* Prevent touching the container border */
+            width: calc(100% - 40px); /* Reduced width to shorten input fields */
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 8px; /* Reduced gap */
@@ -55,7 +60,7 @@
             border-radius: 4px;
         }
         button {
-            width: calc(100% - 20px); /* Prevent touching the container border */
+            width: calc(100% - 40px); /* Prevent touching the container border */
             margin-left: 10px;
             margin-right: 10px;
             padding: 10px;
@@ -83,8 +88,7 @@
     </style>
 </head>
 <body>
-    <!-- Title Section: Twigato -->
-    <h1>Twigato</h1>
+    <h1><a href="main.jsp">Twigato</a></h1>
 
     <!-- Login Form Section -->
     <div class="login-container">
