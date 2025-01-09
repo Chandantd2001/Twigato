@@ -27,7 +27,6 @@ public class UserDAOImpl implements UserDAO {
     private User s;
 	private ResultSet generatedKeys;
 	private int userId;
-    private static ArrayList<User> studentList=new ArrayList<User>();
     
     
     static{
@@ -66,6 +65,7 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public ArrayList<User> fetchAll() {
+		ArrayList<User> studentList=new ArrayList<User>();
 		try {
 			stmt=connection.createStatement();
 			resultSet=stmt.executeQuery(FETCH);
@@ -79,6 +79,7 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public User fetchOne(int id) {
+		ArrayList<User> studentList=new ArrayList<User>();
 		try {
 			pstmt=connection.prepareStatement(FETCHONE);
 			pstmt.setInt(1,id);
@@ -94,6 +95,7 @@ public class UserDAOImpl implements UserDAO {
 
 	
 	ArrayList<User> extractListFromResultSet(ResultSet resultSet){
+		ArrayList<User> studentList=new ArrayList<User>();
 		try {
 			while(resultSet.next()) {
 				studentList.add(new User(
@@ -137,6 +139,7 @@ public class UserDAOImpl implements UserDAO {
 	
 	@Override
 	public User fetchEmail(String email) {
+		ArrayList<User> studentList=new ArrayList<User>();
 		try {
 			pstmt=connection.prepareStatement(FETCHEMAIL);
 			pstmt.setString(1,email);
